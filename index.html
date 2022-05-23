@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking DiToko Siswa</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="#">
+        <div class="banner">
+          <h1> Form Pengisian Booking Barang Toko Siswa</h1>
+        </div>
+
+        <div class="item">
+          <p>Nama Lengkap</p>
+          <div class="name-item">
+            <input id ="nama-depan" type="text" name="name" placeholder="Nama Depan" />
+            <input id ="nama-belakang" type="text" name="name" placeholder="Nama Belakang" />
+          </div>
+        </div>
+
+        <div class="item">
+          <p>Email</p>
+          <input id="email" type="text" name="name" placeholder="Email" />
+        </div>
+
+        <div class="item">
+          <p>Nomor HP</p>
+          <input id="no_hp" type="text" name="name" placeholder="Isi Nomor HP" />
+        </div>
+
+        <div class="item">
+          <p>Alamat</p>
+          <div class="alamat">
+            <input id="alamat" type="text" name="name" placeholder="Alamat Lengkap" />
+            <input type="text" name="name" placeholder="Kode Pos" />
+            <select>
+              <option value="">Kabupaten/Kota</option>
+              <option value="1">Lombok Timur</option>
+              <option value="2">Lombok Barat</option>
+              <option value="3">Lombok Tengah</option>
+              <option value="4">Lombok Utara</option>
+              <option value="5">Mataram</option>
+            </select>
+          </div>
+        </div>   
+
+        <div class="barang1">
+          <label for="barang">Pilihan Barang</label><br>
+          <input type="checkbox" id="barang" name="barang" value="Ballpoint Faster" />Ballpoint Faster<br>
+          <input type="checkbox" id="barang" name="barang" value="Buku Sidu"/>Buku Sidu<br>
+          <input type="checkbox" id="barang" name="barang" value="Pensil 2B"/>Pensil 2B<br>
+          <input type="checkbox" id="barang" name="barang" value="Penggaris"/>Penggaris<br>
+          <input type="checkbox" id="barang" name="barang" value="Buku Gambar A4"/>Buku Gambar A4<br>
+          <input type="checkbox" id="barang" name="barang" value="Pensil Warna"/>Pensil Warna<br><br>
+        </div> 
+
+        <div class="jasa_pengiriman">
+          <label for="pengiriman" class="radio">Pilih Jasa Pengiriman</label><br>
+          <input type="radio" value="Gojek" id="pengiriman" name="shipping" />Gojek<br>
+          <input type="radio" value="Grab" id="pengiriman" name="shipping" />Grab<br>
+          <input type="radio" value="Ambil Sendiri" id="pengiriman" name="shipping" />Ambil Sendiri<br>
+          <input type="radio" value="Pos" id="pengiriman" name="shipping" />Pos<br><br>
+        </div>
+
+        <div class="item">
+          <p>Waktu Pelunasan</p>
+          <input id="tanggal" type="date">
+        </div> 
+        <div class="note">
+          <label for="note">Catatan :</label><br>
+          <textarea name="note" id="note" cols="80" rows="5"></textarea>
+
+        </div>
+        <div class="btn-submit">
+          <button type="submit" onclick="tampilData()">Konfirmasi</button>
+        </div>
+      </form>   
+    </div>
+
+    <script src="./script.js"></script>
+   </body>
+</html>
